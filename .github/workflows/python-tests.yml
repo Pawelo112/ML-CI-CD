@@ -56,11 +56,10 @@ jobs:
 
       - name: Build Docker image
         run: |
-          IMAGE_NAME=ghcr.io/pawelo112/ml-ci-cd:latest
+          IMAGE_NAME=ghcr.io/pawelo112/ml-ci-cd:latest  
           docker build -t $IMAGE_NAME .
 
       - name: Push Docker image
         run: |
-          IMAGE_NAME=ghcr.io/pawelo112/ml-ci-cd:latest
+          IMAGE_NAME=ghcr.io/pawelo112/ml-ci-cd:latest  
           docker push $IMAGE_NAME
-    
